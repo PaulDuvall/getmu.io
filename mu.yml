@@ -5,16 +5,14 @@ environments:
     cluster:
       maxSize: 1
     loadbalancer:
-      hostedzone: getmu.io
+      hostedzone: oneclickdeployment.com
       name: dev
-      certificate: 56fd77d1-8e41-4a8c-a9db-f6b90fa01cd7
   - name: mu-prod
     cluster:
       maxSize: 1
     loadbalancer:
-      hostedzone: getmu.io
+      hostedzone: oneclickdeployment.com
       name: prod
-      certificate: 56fd77d1-8e41-4a8c-a9db-f6b90fa01cd7
 
 service:
   name: getmu-io
@@ -24,7 +22,7 @@ service:
     - /*
   pipeline:
     source:
-      repo: stelligent/getmu.io
+      repo: PaulDuvall/getmu.io
     build:
       image: aws/codebuild/eb-nodejs-4.4.6-amazonlinux-64:2.1.3
     acceptance:
