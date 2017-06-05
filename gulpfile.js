@@ -44,7 +44,7 @@ gulp.task('static', function() {
     gulp.src(['img/**/*'])
         .pipe(gulp.dest('dist/img'));
     
-    gulp.src(['index.html','favicon.ico','install.sh'])
+    gulp.src(['html/**/*','favicon.ico','install.sh'])
         .pipe(gulp.dest('dist/'))
 });
     
